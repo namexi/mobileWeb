@@ -1,1 +1,15 @@
-/*==================================*/
+
+
+
+/*版心*/
+.jd_container{
+    max-width: 640px;
+    min-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+    background: pink;
+    height: 1000px;
+}
+
+
+

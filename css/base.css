@@ -6,5 +6,62 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    -webkit-box-sizing:border-box;
+    tap-highlight-color:transparent;
+}
+
+body{
+    font-size: 14px;
+    font-family: "Microsoft YaHei",sans-serif;
+    color: #333;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+input,textarea{
+    border: none;
+    outline: none;
+    /*不允许拖拽*/
+    resize: none;
+    -webkit-appearance: none;
+}
+
+
+/*=============common cs=====================*/
+
+
+.f_l{
+    float: left;
+}
+.f_r{
+    float: right;
+}
+
+.clearFix::before,
+.clearFix::after {
+    content: " ";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+    clear: both;
+}
+
+.m_l10{
+     margin-left: 10px;
+ }
+.m_r10{
+    margin-right: 10px;
+}
+.m_t10{
+    margin-top: 10px;
+}
+.m_b10{
+    margin-bottom: 10px;
 }

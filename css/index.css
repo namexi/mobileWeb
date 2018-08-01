@@ -7,8 +7,8 @@
     min-width: 320px;
     width: 100%;
     margin: 0 auto;
-    background: pink;
-    height: 1000px;
+    background: #ededed;
+
 }
 
 
@@ -20,6 +20,7 @@
      position: fixed;
      top: 0;
      left: 0;
+    z-index: 1000;
 
  }
 
@@ -32,13 +33,13 @@
     position: relative;
 }
 
-.jd_search .cearch_box .logo{
+.jd_search .cearch_box .icon_logo{
     width: 60px;
     height: 32px;
     position: absolute;
     top: 8px;
     left: 8px;
-    background: url(../images/sprites.png) no-repeat 0 -109px / 200px 200px;
+    background-position:  0 -109px
 }
 .jd_search .cearch_box form{
     width: 100%;
@@ -59,7 +60,7 @@
     position: absolute;
     top: 10px;
     left: 80px;
-    background: url(../images/sprites.png) no-repeat -60px -110px / 200px 200px;
+    background-position:  -60px -110px;
 }
 .jd_search .cearch_box .login{
     width: 40px;
@@ -69,4 +70,86 @@
     top: 0;
     right: 0;
     color: #fff;
+}
+
+/*轮播图*/
+
+.jd_banner{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.jd_banner ul:first-child{
+    width: 1000%;
+    transform: translateX(-10%);
+}
+.jd_banner ul:first-child li{
+    width: 10%;
+    float: left;
+}
+.jd_banner ul:first-child li a{
+    width: 100%;
+    display: block;
+}
+.jd_banner ul:first-child li img{
+    width: 100%;
+    display: block;
+}
+
+.jd_banner ul:last-child{
+    width: 88px;
+    position: absolute;
+    left:50%;
+    bottom: 6px;
+    margin-left: -44px;
+}
+.jd_banner ul:last-child li{
+    width: 6px;
+    height: 6px;
+    float: left;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+.jd_banner ul:last-child li:first-child{
+    margin-left: 0;
+}
+.jd_banner ul:last-child li.now{
+   background: #fff;
+}
+
+
+
+/*导航*/
+
+.jd_nav{
+    width: 100%;
+    background: #fff;
+}
+.jd_nav ul{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+.jd_nav ul li{
+    width: 25%;
+    float: left;
+    /*padding: 5px 0;*/
+
+
+}
+.jd_nav ul li a{
+    width: 100%;
+
+
+}
+.jd_nav ul li a img{
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin-left: 60px;
+}
+.jd_nav ul li a p{
+    padding: 5px 0;
+    font-size: 12px;
 }

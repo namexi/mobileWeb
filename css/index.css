@@ -153,3 +153,25 @@
     padding: 5px 0;
     font-size: 12px;
 }
+
+
+/*产品模板*/
+
+.jd_product{
+    width: 100%;
+    padding: 0 5px;
+}
+.jd_product .jd_product_box{
+    height: 300px;
+    background: #fff;
+    margin-top: 10px;
+    box-shadow: 0 0 2px #ccc;
+}
+.jd_product .jd_product_box .tit{
+    height: 35px;
+    border-bottom: 1px solid #ccc;
+}
+.jd_product .sk .tit{
+    border-bottom: none;
+}
+.jd_product .jd_product_box .cont{}

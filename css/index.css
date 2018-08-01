@@ -32,10 +32,17 @@
     position: relative;
 }
 
-.jd_search .cearch_box .logo{}
+.jd_search .cearch_box .logo{
+    width: 60px;
+    height: 32px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: url(../images/sprites.png) no-repeat 0 -109px / 200px 200px;
+}
 .jd_search .cearch_box form{
     width: 100%;
-    padding-left: 60px;
+    padding-left: 70px;
     padding-right: 50px;
     position: relative;
 }
@@ -49,10 +56,10 @@
 .jd_search .cearch_box form .icon_search{
     width: 20px;
     height: 20px;
-    background: pink;
     position: absolute;
     top: 10px;
-    left: 70px;
+    left: 80px;
+    background: url(../images/sprites.png) no-repeat -60px -110px / 200px 200px;
 }
 .jd_search .cearch_box .login{
     width: 40px;

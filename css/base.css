@@ -65,3 +65,9 @@ input,textarea{
 .m_b10{
     margin-bottom: 10px;
 }
+
+[class^="icon_"],[class*=" icon_"]{
+    background-image: url(../images/sprites.png);
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+}

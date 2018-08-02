@@ -29,7 +29,7 @@
     height: 40px;
     max-width: 640px;
     margin: 0 auto;
-    background: red;
+    background:rgba(201,21,35,0);
     position: relative;
 }
 
@@ -162,7 +162,6 @@
     padding: 0 5px;
 }
 .jd_product .jd_product_box{
-    height: 300px;
     background: #fff;
     margin-top: 10px;
     box-shadow: 0 0 2px #ccc;
@@ -174,4 +173,88 @@
 .jd_product .sk .tit{
     border-bottom: none;
 }
-.jd_product .jd_product_box .cont{}
+.jd_product .jd_product_box .cont{
+    width: 100%;
+}
+.jd_product .jd_product_box .cont a{
+    width: 50%;
+}
+.jd_product .jd_product_box .cont a img{
+    display: block;
+    width: 100%;
+}
+
+.jd_product .sk .tit .icon{
+    width: 30px;
+    height: 30px;
+    background: url(../images/seckill-icon.png) no-repeat center /20px 20px;
+}
+.jd_product .sk .cont{
+    width: 100%;
+}
+.jd_product .sk .cont ul{
+    width: 100%;
+    padding: 10px 0;
+}
+.jd_product .sk .cont ul li{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    font-size: 12px;
+}
+.jd_product .sk .cont ul li a{
+    width: 100%;
+    display: block;
+    border-right: 1px solid #ccc;
+}
+.jd_product .sk .cont ul li:last-child a{
+    border: none;
+}
+.jd_product .sk .cont ul li a img{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+
+
+}
+.jd_product .sk .cont ul li p{
+    color: #d8505c;
+    padding: 7px 0;
+}
+.jd_product .sk .tit .name{
+    color: #d8505c;
+    margin: 8px 0 0 5px;
+}
+.jd_product .sk .tit .time{
+    color: #fff;
+
+    margin: 10px 0 0 10px;
+}
+.jd_product .sk .tit .time span{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 18px;
+    background: #000;
+    text-align: center;
+}
+.jd_product .sk .tit .time span:nth-child(3n){
+    background: #fff;
+    color: #000;
+    width: 2px;
+}
+.jd_product .sk .tit div:last-child{
+    margin-top: 5px;
+}
+.jd_product .jd_product_box .tit h3{
+    font-weight: 400;
+   padding-top: 6px;
+}
+.jd_product .jd_product_box .tit h3::before{
+    content: " ";
+    display: inline-block;
+    width: 3px;
+    height: 12px;
+    background: #d8505c;
+  margin: 4px 10px 0 10px ;
+}

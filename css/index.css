@@ -8,7 +8,6 @@
     width: 100%;
     margin: 0 auto;
     background: #ededed;
-
 }
 
 
@@ -134,11 +133,13 @@
 .jd_nav ul li{
     width: 25%;
     float: left;
+    font-size: 12px;
     /*padding: 5px 0;*/
 
 
 }
 .jd_nav ul li a{
+    display: block;
     width: 100%;
 
 
@@ -147,13 +148,9 @@
     width: 40px;
     height: 40px;
     display: block;
-    margin-left: 60px;
-}
-.jd_nav ul li a p{
-    padding: 5px 0;
-    font-size: 12px;
-}
+   margin: 5px auto;
 
+}
 
 /*产品模板*/
 

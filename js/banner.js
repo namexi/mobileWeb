@@ -11,11 +11,13 @@ Banner.prototype = {
     Carrousel:function(nav,image,tab){
         var width = image.offsetWidth
         var idx = 1;//默认显示的张数
-    //自动播放效果 
+    //自动播放效果
         var timeId = setInterval(function () {
-            idx++;
-            //清楚前一个样式
+            ++idx;
+            //清除前一个样式
+         if(idx > 1 && idx < 10){
             tab[idx-2].removeAttribute('class')
+        }
             nav.style.transition = 'all 0.5s'
             nav.style.webkitTransition = 'all 0.5s'
             nav.style.transform = 'translateX(' + -idx * width + 'px)'

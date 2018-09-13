@@ -22,10 +22,11 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
+  @import '~style/varibles.styl'
   .head
     display:flex
-    line-height:.86rem
-    background-color:#00bcd4
+    line-height:$headHeight
+    background-color:$headBgColor
     color:#fff
     font-size:.30rem
     .head-left

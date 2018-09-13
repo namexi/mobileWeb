@@ -3,9 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import './assets/style/reset.css'
-import './assets/style/border.css'
-import './assets/style/iconfont.css'
+import 'style/reset.css'
+import 'style/border.css'
+import 'style/iconfont.css'
 // 解决移动端点击事件300秒延迟 插件
 import FastClick from 'fastclick'
 

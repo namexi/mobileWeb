@@ -3,16 +3,13 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
-// 引入 大致的样式文件 01初始化
 import './assets/style/reset.css'
-// 引入 解决 边框1PX像素问题 样式文件 01 初始化
 import './assets/style/border.css'
-// 引入解决 移动端点击事件延迟问题 01 初始化
+import './assets/style/iconfont.css'
+// 解决移动端点击事件300秒延迟 插件
 import FastClick from 'fastclick'
-// 调用 attach() 方法解决 01 初始化
-FastClick.attach(document.body)
 
+FastClick.attach(document.body)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

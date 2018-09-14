@@ -1,4 +1,4 @@
-# my-project
+# trip
 
 > A Vue.js project
 

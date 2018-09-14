@@ -6,7 +6,6 @@
       </swiper-slide>
       <div class="swiper-pagination"  slot="pagination"></div>
     </swiper>
-    tetx1
   </div>
 </template>
 <script>
@@ -28,9 +27,12 @@ export default {
 </script>
 <style lang="stylus" scoped>
   .wrapper >>> .swiper-pagination-bullet-active
-    background:red
+    background:#fff
   .wrapper
+    overflow:hidden
     width:100%
+    height:0
+    padding-bottom:26.7%
     .swiper-img
       width:100%
 </style>

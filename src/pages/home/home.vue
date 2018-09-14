@@ -2,7 +2,6 @@
     <div>
         <home-header></home-header>
         <home-swiper :list="swiperList"></home-swiper>
-        text2
     </div>
 </template>
 <script>
@@ -12,6 +11,7 @@ export default {
   name: 'Home',
   data () {
     return {
+
       swiperList: [
         {
           url: 'http://img1.qunarzz.com/piao/fusion/1809/6a/847ac7b98f10e202.jpg_750x200_f0593cb5.jpg',

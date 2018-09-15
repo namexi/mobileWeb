@@ -41,8 +41,7 @@ export default {
       height:.6rem
       font-size:.28rem
       line-height:.6rem
-      margin-top:.14rem
-      margin-left:.1rem
+      margin:.14rem .1rem
       padding-left:.16rem
       border-radius:.06rem
       color:#ccc

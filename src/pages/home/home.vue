@@ -2,16 +2,17 @@
     <div>
         <home-header></home-header>
         <home-swiper :list="swiperList"></home-swiper>
+        <home-icons></home-icons>
     </div>
 </template>
 <script>
 import HomeHeader from './components/header.vue'
 import HomeSwiper from './components/swiper.vue'
+import HomeIcons from './components/icons.vue'
 export default {
   name: 'Home',
   data () {
     return {
-
       swiperList: [
         {
           url: 'http://img1.qunarzz.com/piao/fusion/1809/6a/847ac7b98f10e202.jpg_750x200_f0593cb5.jpg',
@@ -34,7 +35,8 @@ export default {
   },
   components: {
     HomeHeader: HomeHeader,
-    HomeSwiper: HomeSwiper
+    HomeSwiper: HomeSwiper,
+    HomeIcons
   }
 }
 </script>

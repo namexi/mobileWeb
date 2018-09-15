@@ -1,6 +1,6 @@
 <template>
   <div class="icons">
-    <swiper :options="swiperOption">
+    <swiper :options="i">
       <swiper-slide v-for=" (page,index) in pagesList " :key="index">
         <div class="icon" v-for="(item,index) in page" :key="index" >
           <div class="icon-content">
@@ -70,14 +70,17 @@ export default {
         array[page].push(el)
       })
       return array
+    },
+    i: function () {
+      return this.pagesList.length === 1 ? '' : this.swiperOption
     }
   }
 }
 </script>
 <style lang="stylus" scoped>
   .icons >>> .swiper-container
-    height:0
-    padding-bottom:45%
+    height:3.8rem
+    border-sizing:content-box
   .icons >>> .swiper-pagination-bullet-active
     background:rgba(0,175,190,.8)
   .icons

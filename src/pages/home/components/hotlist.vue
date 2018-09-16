@@ -77,7 +77,6 @@ export default {
         top:0
         left:0
         right:0
-        margin-top:.2rem
         .host-title-img
           img
             height.3rem
@@ -87,7 +86,7 @@ export default {
             float:left
             line-height:.44rem
             font-size:.32rem
-            margin-left:.05rem
+            margin-left:.07rem
             color:#333
         a
           float:right
@@ -98,10 +97,10 @@ export default {
           span
             font-size:.32rem
     .host-cont >>> .swiper-container
-      height:144px
+      height:154px
       background:#fff
       .swiper-wrapper
-        margin-left:.12rem
+        margin:0 .12rem
     .host-cont >>> .swiper-slide
       max-width:100px
     .host-cont >>> .swiper-scrollbar
@@ -130,7 +129,7 @@ export default {
           .host-cont-des
             width:2rem
             position:absolute
-            bottom:.1rem
+            bottom:.2rem
             span
               color:#ff8300
 </style>

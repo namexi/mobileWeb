@@ -12,7 +12,12 @@ import 'swiper/dist/css/swiper.css'
 
 FastClick.attach(document.body)
 Vue.config.productionTip = false
-Vue.use(VueAwesomeSwiper)
+Vue.use(VueAwesomeSwiper, {
+  // 修改swiper自己或子元素时，自动初始化swiper
+  observer: true,
+  // 修改swiper的父元素时，自动初始化swiper
+  observeParents: true
+})
 
 /* eslint-disable no-new */
 new Vue({

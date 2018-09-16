@@ -85,6 +85,7 @@ export default {
     background:rgba(0,175,190,.8)
   .icons
     margin-top:.1rem
+    background:#fff
     .icon
       overflow:hidden
       width:25%

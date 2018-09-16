@@ -10,7 +10,7 @@
       <li v-for="(el,index) in likList" :key="index">
         <a href="#">
           <div class="like-content-img">
-            <img :src="el.url" alt="el.title">
+            <img :src="el.url" :alt="el.title">
           </div>
           <div class="like-content-des">
             <div class="title">{{el.title}}</div>

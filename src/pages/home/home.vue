@@ -6,6 +6,7 @@
     <home-subfield></home-subfield>
     <home-hotlist></home-hotlist>
     <home-guessyoulike></home-guessyoulike>
+    <home-weekend></home-weekend>
   </div>
 </template>
 <script>
@@ -15,6 +16,7 @@ import HomeIcons from './components/icons.vue'
 import HomeSubfield from './components/subfield.vue'
 import HomeHotlist from './components/hotlist.vue'
 import HomeGuessyoulike from './components/guessyoulike.vue'
+import HomeWeekend from './components/weekend.vue'
 export default {
   name: 'Home',
   data () {
@@ -45,7 +47,8 @@ export default {
     HomeIcons,
     HomeSubfield,
     HomeHotlist,
-    HomeGuessyoulike
+    HomeGuessyoulike,
+    HomeWeekend
   }
 }
 </script>

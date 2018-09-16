@@ -4,7 +4,7 @@
       <div class="host-title">
         <div class="host-title-img">
           <img src="http://img1.qunarzz.com/piao/fusion/1711/16/bfbb9874e8f11402.png" alt="">
-          <span class="host-title-dec">本周热门表单</span>
+          <span class="host-title-dec">本周热门榜单</span>
         </div>
         <a href="#">全部榜单<span class="iconfont">&#xe616;</span></a>
       </div>
@@ -63,6 +63,7 @@ export default {
   .hotlist
     height:4.02rem
     background:#f5f5f5
+    margin-top:.2rem
     .host-wrapper
       width:100%
       height:100%
@@ -100,7 +101,7 @@ export default {
       height:154px
       background:#fff
       .swiper-wrapper
-        margin:0 .12rem
+        margin:0 .24rem
     .host-cont >>> .swiper-slide
       max-width:100px
     .host-cont >>> .swiper-scrollbar
@@ -113,14 +114,11 @@ export default {
         bottom:0
       ul
         display:flex
-        -webkit-padding-start:.12rem
         background:#fff
         .host-cont-img
           img
             height:2rem
         li
-          &:nth-child(2n+1)
-            margin-right:.1rem
           p
             color:#333
             font-size:.24rem

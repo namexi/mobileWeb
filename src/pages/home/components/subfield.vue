@@ -27,7 +27,7 @@ export default {
     background:#f5f5f5
     ul
       display:flex
-      -webkit-margin-after: 0.7em;
+      margin-bottom: 0.7em
       background:#fff
       border-top: .02rem solid rgba(224, 224, 224, .39)
       li

@@ -72,7 +72,7 @@ export default {
         height:100%
         img
           height:.3rem
-          margin-left:.2rem
+          margin-left:.22rem
           margin-bottom:.2rem
         .like-title-dec
           display:inline-block
@@ -82,13 +82,12 @@ export default {
     .like-content
       li
         padding:.2rem 0
-        border-bottom: 1px solid rgba(224,224,224,0.3)
         a
           display:flex
         .like-content-img
           width:2rem
           float:left
-          margin-left:.2rem
+          margin-left:.24rem
           img
             height:2rem
         .like-content-des
@@ -132,4 +131,5 @@ export default {
       line-height:.4rem
       padding:.2rem 0
       text-align:center
+      border-top: 1px solid rgba(224,224,224,0.39)
 </style>

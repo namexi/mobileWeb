@@ -7,7 +7,7 @@
       </div>
     </div>
     <ul class="like-content">
-      <li v-for="(el,index) in likList" :key="index">
+      <li v-for="(el,index) in list" :key="index">
         <a href="#">
           <div class="like-content-img">
             <img :src="el.url" :alt="el.title">
@@ -29,34 +29,7 @@
 <script>
 export default {
   name: 'HomeGuessyoulike',
-  data () {
-    return {
-      likList: [
-        {
-          url: 'http://img1.qunarzz.com/sight/p0/1809/27/27af65c75f65a2aaa3.water.jpg_200x200_e62e758a.jpg',
-          title: '周庄',
-          comment: 123,
-          price: 88,
-          coord: '昆山区'
-        },
-        {
-          url: 'http://img1.qunarzz.com/sight/p0/1603/85/85aa0c000578a01e90.water.jpg_200x200_0ccb4aa8.jpg',
-          title: '拙政园',
-          comment: 123,
-          price: 45,
-          coord: '平山区',
-          feature: '庭院错落，花木为胜，天下园林之典范'
-        },
-        {
-          url: 'http://img1.qunarzz.com/sight/p0/201405/14/3dfad2bcd30c40e91a15f8b7296d86a6.jpg_200x200_265db173.jpg',
-          title: '同里古镇',
-          comment: 123,
-          price: 45,
-          coord: '吴江市'
-        }
-      ]
-    }
-  }
+  props: ['list']
 }
 </script>
 <style lang="stylus" scoped>

@@ -10,7 +10,7 @@
       </div>
       <div class="host-cont">
         <swiper :options="swiperOption">
-          <swiper-slide v-for="(el,index) in hostList" :key="index">
+          <swiper-slide v-for="(el,index) in list" :key="index">
             <ul>
               <li>
                 <a href="#">
@@ -34,6 +34,7 @@
 <script>
 export default {
   name: 'HomeHotlist',
+  props: ['list'],
   data: function () {
     return {
       swiperOption: {
@@ -44,17 +45,7 @@ export default {
           hide: true,
           dragSize: 150
         }
-      },
-      hostList: [
-        { url: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_150x150_06cb3e52.jpg', des: '故宫', price: 20 },
-        { url: 'http://img1.qunarzz.com/sight/p0/1505/f5/f5f45e1a83537bcb.water.jpg_150x150_2a3c9117.jpg', des: '圆明园', price: 25 },
-        { url: 'http://img1.qunarzz.com/sight/p0/1501/40/40b2b6c951b28fdd.water.jpg_150x150_8a63d940.jpg', des: '水立方', price: 14 },
-        { url: 'http://img1.qunarzz.com/sight/p0/1708/2b/2b3b94de99c0a425a3.img.jpg_150x150_2dec3e78.jpg', des: '长城', price: 40 },
-        { url: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_150x150_06cb3e52.jpg', des: '故宫', price: 20 },
-        { url: 'http://img1.qunarzz.com/sight/p0/1505/f5/f5f45e1a83537bcb.water.jpg_150x150_2a3c9117.jpg', des: '圆明园', price: 25 },
-        { url: 'http://img1.qunarzz.com/sight/p0/1501/40/40b2b6c951b28fdd.water.jpg_150x150_8a63d940.jpg', des: '水立方', price: 14 },
-        { url: 'http://img1.qunarzz.com/sight/p0/1708/2b/2b3b94de99c0a425a3.img.jpg_150x150_2dec3e78.jpg', des: '长城', price: 40 }
-      ]
+      }
     }
   }
 }

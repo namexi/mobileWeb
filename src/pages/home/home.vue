@@ -2,11 +2,11 @@
   <div class="homepage">
     <home-header></home-header>
     <home-swiper :list="swiperList"></home-swiper>
-    <home-icons></home-icons>
+    <home-icons :list="iconsList"></home-icons>
     <home-subfield></home-subfield>
-    <home-hotlist></home-hotlist>
-    <home-guessyoulike></home-guessyoulike>
-    <home-weekend></home-weekend>
+    <home-hotlist :list="hotList"></home-hotlist>
+    <home-guessyoulike :list="likeList"></home-guessyoulike>
+    <home-weekend :list="weekList"></home-weekend>
   </div>
 </template>
 <script>
@@ -21,24 +21,11 @@ export default {
   name: 'Home',
   data () {
     return {
-      swiperList: [
-        {
-          url: 'http://img1.qunarzz.com/piao/fusion/1809/6a/847ac7b98f10e202.jpg_750x200_f0593cb5.jpg',
-          title: '门票'
-        },
-        {
-          url: 'http://img1.qunarzz.com/piao/fusion/1801/bd/04554e7c67650302.jpg_750x200_4293d60a.jpg',
-          title: '门票'
-        },
-        {
-          url: 'http://img1.qunarzz.com/piao/fusion/1806/1c/4847ea66072c7b02.jpg_750x200_c32457fb.jpg',
-          title: '门票'
-        },
-        {
-          url: 'http://img1.qunarzz.com/piao/fusion/1807/78/0a6355bcbbf89502.jpg_750x200_fc738633.jpg',
-          title: '门票'
-        }
-      ]
+      swiperList: [],
+      iconsList: [],
+      hotList: [],
+      likeList: [],
+      weekList: []
     }
   },
   components: {
@@ -49,6 +36,26 @@ export default {
     HomeHotlist,
     HomeGuessyoulike,
     HomeWeekend
+  },
+  methods: {
+    getdat () {
+      this.$axios.get('/api/index.json')
+        .then(this.getResData)
+    },
+    getResData (res) {
+      res = res.data
+      if (res.ret && res.data) {
+        this.swiperList = res.data.swiperList
+        this.iconsList = res.data.iconList
+        this.hotList = res.data.hotList
+        this.likeList = res.data.recommendList
+        this.weekList = res.data.weekendList
+      }
+    }
+
+  },
+  created () {
+    this.getdat()
   }
 }
 </script>

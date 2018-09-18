@@ -8,10 +8,12 @@
             <span class="iconfont">&#xe632;</span>
             输入城市/景点/游玩主题
             </div>
-            <div class="head-right">
-            城市
-            <span class="iconfont arrowsBotton">&#xe64a;</span>
-            </div>
+            <router-link :to="{ name: 'City'}">
+              <div class="head-right">
+              城市
+              <span class="iconfont arrowsBotton">&#xe64a;</span>
+              </div>
+            </router-link>
         </div>
     </div>
 </template>
@@ -49,6 +51,7 @@ export default {
       width:1.04rem
       float:right
       text-align:center
+      color:#fff
       margin: 0 .1rem
       .arrowsBotton
         font-size:.22rem

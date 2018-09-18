@@ -1,0 +1,184 @@
+{
+  "ret": true,
+  "data":
+  {
+    "swiperList": [
+    {
+      "id": "0001",
+      "url": "http://img1.qunarzz.com/piao/fusion/1801/1a/94428c6dea109402.jpg_640x200_2cf590d8.jpg"
+    },
+    {
+      "id": "0002",
+      "url": "http://img1.qunarzz.com/piao/fusion/1802/42/7c92b9a381e46402.jpg_640x200_1cdce2a4.jpg"
+    },
+    {
+      "id": "0003",
+      "url": "http://img1.qunarzz.com/piao/fusion/1802/51/e78f936a5b404102.jpg_640x200_c14f0b3a.jpg"
+    },
+    {
+      "id": "0004",
+      "url": "http://img1.qunarzz.com/piao/fusion/1712/91/a275569091681d02.jpg_640x200_0519ccb9.jpg"
+    }],
+    "iconList": [
+    {
+      "id": "0001",
+      "url": "http://img1.qunarzz.com/piao/fusion/1611/54/ace00878a52d9702.png",
+      "text": "景点门票"
+    },
+    {
+      "id": "0002",
+      "url": "http://img1.qunarzz.com/piao/fusion/1711/df/86cbcfc533330d02.png",
+      "text": "滑雪季"
+    },
+    {
+      "id": "0003",
+      "url": "http://img1.qunarzz.com/piao/fusion/1710/a6/83f636bd75ae6302.png",
+      "text": "泡温泉"
+    },
+    {
+      "id": "0004",
+      "url": "http://img1.qunarzz.com/piao/fusion/1611/35/2640cab202c41b02.png",
+      "text": "动植园"
+    },
+    {
+      "id": "0005",
+      "url": "http://img1.qunarzz.com/piao/fusion/1611/d0/e09575e66f4aa402.png",
+      "text": "游乐园"
+    },
+    {
+      "id": "0006",
+      "url": "http://img1.qunarzz.com/piao/fusion/1611/59/569d3c096e542502.png",
+      "text": "必游榜单"
+    },
+    {
+      "id": "0007",
+      "url": "http://img1.qunarzz.com/piao/fusion/1611/17/4bd370f3eb1acd02.png",
+      "text": "演出"
+    },
+    {
+      "id": "0008",
+      "url": "http://img1.qunarzz.com/piao/fusion/1611/7f/b1ea3c8c7fb6db02.png",
+      "text": "城市观光"
+    },
+    {
+      "id": "0009",
+      "url": "http://img1.qunarzz.com/piao/fusion/1611/a9/ffc620dbda9b9c02.png",
+      "text": "一日游"
+    }],
+    "recommendList": [
+    {
+      "id": "0001",
+      "url": "http://img1.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg",
+      "title": "北京欢乐谷",
+      "comment": 123,
+      "price": 59.9,
+      "coord": "朝阳区",
+      "feature": "近期小伙伴们收藏最！多！的景点😊"
+    },
+    {
+      "id": "0002",
+      "url": "http://img1.qunarzz.com/sight/p0/1511/d2/d2aec2dfc5aa771290.water.jpg_140x140_abb362a7.jpg",
+      "title": "南山滑雪场",
+      "comment": 123,
+      "price": 88,
+      "coord": "昆山区"
+    },
+    {
+      "id": "0003",
+      "url": "http://img1.qunarzz.com/sight/p0/1501/f4/f467729126949c3a.water.jpg_140x140_ef235b1c.jpg",
+      "title": "天安门广场",
+      "comment": 123,
+      "price": 88,
+      "coord": "东城区",
+      "feature": "我爱北京天安门，天安门上太阳升"
+    },
+    {
+      "id": "0004",
+      "url": "http://img1.qunarzz.com/sight/p0/1501/40/40b2b6c951b28fdd.water.jpg_140x140_1c863e5c.jpg",
+      "title": "水立方",
+      "comment": 123,
+      "price": 14,
+      "coord": "奥林匹克公园"
+    },
+    {
+      "id": "0005",
+      "url": "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg",
+      "title": "故宫",
+      "comment": 123,
+      "price": 20,
+      "coord": "朝阳区"
+    }],
+    "weekendList": [
+    {
+      "id": "0001",
+      "url": "http://img1.qunarzz.com/sight/source/1510/6e/1ea71e2f04e.jpg_r_640x214_aa6f091d.jpg",
+      "title": "北京温泉排行榜",
+      "comment": "细数北京温泉，温暖你的冬天"
+    },
+    {
+      "id": "0002",
+      "url": "http://img1.qunarzz.com/sight/source/1505/aa/7baaf8a851d221.jpg_r_640x214_1431200f.jpg",
+      "title": "北京必游TOP10",
+      "comment": "来北京必去的景点非这些地方莫属"
+    },
+    {
+      "id": "0003",
+      "url": "http://img1.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg",
+      "title": "寻找北京的皇城范儿",
+      "comment": "数百年的宫廷庙宇，至今依旧威严霸气"
+    },
+    {
+      "id": "0004",
+      "url": "http://img1.qunarzz.com/sight/source/1505/ce/bc89bc2f0e33ea.jpg_r_640x214_3e408453.jpg",
+      "title": "学生最爱的博物馆",
+      "comment": "周末干嘛？北京很多博物馆已经免费开放啦"
+    },
+    {
+      "id": "0005",
+      "url": "http://img1.qunarzz.com/sight/source/1505/b2/fde1bfcd057a52.jpg_r_640x214_bbf3fa44.jpg",
+      "title": "儿童剧场，孩子的乐园",
+      "comment": "带宝贝观看演出，近距离体验艺术的无穷魅力"
+    }],
+    "hotList": [
+    {
+      "url": "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_150x150_06cb3e52.jpg",
+      "des": "故宫",
+      "price": 20
+    },
+    {
+      "url": "http://img1.qunarzz.com/sight/p0/1505/f5/f5f45e1a83537bcb.water.jpg_150x150_2a3c9117.jpg",
+      "des": "圆明园",
+      "price": 25
+    },
+    {
+      "url": "http://img1.qunarzz.com/sight/p0/1501/40/40b2b6c951b28fdd.water.jpg_150x150_8a63d940.jpg",
+      "des": "水立方",
+      "price": 14
+    },
+    {
+      "url": "http://img1.qunarzz.com/sight/p0/1708/2b/2b3b94de99c0a425a3.img.jpg_150x150_2dec3e78.jpg",
+      "des": "长城",
+      "price": 40
+    },
+    {
+      "url": "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_150x150_06cb3e52.jpg",
+      "des": "故宫",
+      "price": 20
+    },
+    {
+      "url": "http://img1.qunarzz.com/sight/p0/1505/f5/f5f45e1a83537bcb.water.jpg_150x150_2a3c9117.jpg",
+      "des": "圆明园",
+      "price": 25
+    },
+    {
+      "url": "http://img1.qunarzz.com/sight/p0/1501/40/40b2b6c951b28fdd.water.jpg_150x150_8a63d940.jpg",
+      "des": "水立方",
+      "price": 14
+    },
+    {
+      "url": "http://img1.qunarzz.com/sight/p0/1708/2b/2b3b94de99c0a425a3.img.jpg_150x150_2dec3e78.jpg",
+      "des": "长城",
+      "price": 40
+    }]
+  }
+}

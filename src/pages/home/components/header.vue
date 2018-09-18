@@ -8,7 +8,7 @@
             <span class="iconfont">&#xe632;</span>
             输入城市/景点/游玩主题
             </div>
-            <router-link :to="{ name: 'Citys'}">
+            <router-link :to="{ name: 'City'}">
               <div class="head-right">
               城市
               <span class="iconfont arrowsBotton">&#xe64a;</span>

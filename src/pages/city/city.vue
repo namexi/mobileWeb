@@ -7,7 +7,7 @@
 <script>
 import CityHeader from './components/header.vue'
 export default {
-  name: 'City',
+  name: 'Citys',
   components: {
     CityHeader
   }

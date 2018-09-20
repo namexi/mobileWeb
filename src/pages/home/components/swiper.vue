@@ -18,8 +18,8 @@ export default {
         pagination: {
           el: '.swiper-pagination'
         },
-        autoplay: true,
-        loop: true
+        loop: true,
+        autoplay: true
       }
     }
   },

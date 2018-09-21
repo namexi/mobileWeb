@@ -25,7 +25,7 @@
 import BetterScroll from 'better-scroll'
 export default {
   name: 'CityTab',
-  props: ['cities', 'hotCities'],
+  props: ['cities', 'hotCities', 'letter'],
   data () {
     return {
       letterTarget: ''
@@ -39,8 +39,20 @@ export default {
   watch: {
     letterTarget () {
       if (this.letterTarget) {
-        const el = this.$refs[this.letterTarget]
-        this.scroll.scrollToElement(el[0])
+        const el = this.$refs[this.letterTarget][0]
+        this.scroll.scrollToElement(el)
+      }
+    },
+    letter () {
+      if (this.letter) {
+        const el = this.$refs[this.letter][0]
+        this.scroll.scrollToElement(el)
+      }
+    },
+    idx () {
+      if (this.idx) {
+        const el = this.$refs[this.idx][0]
+        this.scroll.scrollToElement(el)
       }
     }
   },

@@ -2,33 +2,43 @@
   <div class="tab">
     <div class="header">
       <ul class="header-tab">
-        <router-link :to="{ name: 'Domestic'}">
-          <li class="active" @click="tabDomestic" ref="tab1">境内</li>
-        </router-link>
-        <router-link :to="{ name: 'Overseas'}">
+        <li class="active" @click="tabDomestic" ref="tab1">境内</li>
         <li @click="tabOverseas" ref="tab2">境外·港澳台</li>
-        </router-link>
       </ul>
     </div>
-    <div class="main">
-      <router-view/>
-    </div>
+    <city-domestic :cities="cities" :hotCities="hotCities"></city-domestic>
+    <alphabet-list :list="cities"></alphabet-list>
   </div>
 </template>
 
 <script>
-import router from '@/router/city.js'
+import CityDomestic from './domestic'
+import AlphabetList from './Alphabet'
 export default {
   name: 'CityTab',
-  router,
+  components: {
+    CityDomestic,
+    AlphabetList
+  },
   data () {
     return {
       tab1: '',
-      tab2: ''
+      tab2: '',
+      cityList: [],
+      hotCities: [],
+      cities: {}
     }
   },
   created () {
-    this.$router.push('/domestic') // 页面加载时跳转
+    this.$axios.get('api/city.json')
+      .then(res => {
+        res = res.data
+        if (res.ret) {
+          this.cityList = res.data
+          this.hotCities = res.data.hotCities
+          this.cities = res.data.cities
+        }
+      })
   },
   mounted: function () {
     this.tab1 = this.$refs.tab1
@@ -42,9 +52,13 @@ export default {
     },
     tabDomestic () {
       this.tab(this.tab1, this.tab2, 'active')
+      this.cities = this.cityList.cities
+      this.hotCities = this.cityList.hotCities
     },
     tabOverseas () {
       this.tab(this.tab2, this.tab1, 'active')
+      this.cities = this.cityList.overseasCities
+      this.hotCities = this.cityList.overseasHotCities
     }
   }
 
@@ -72,5 +86,4 @@ export default {
         .active
           background:#fff
           color:#00bcd4
-
 </style>

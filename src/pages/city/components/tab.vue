@@ -1,19 +1,24 @@
 <template>
-  <div class="tab">
-    <div class="header">
-      <ul class="header-tab">
-        <li class="active" @click="tabDomestic" ref="tab1">境内</li>
-        <li @click="tabOverseas" ref="tab2">境外·港澳台</li>
-      </ul>
+  <div class="tab" >
+      <div class="header">
+        <ul class="header-tab">
+          <li class="active" @click="tabDomestic" ref="tab1">境内</li>
+          <li @click="tabOverseas" ref="tab2">境外·港澳台</li>
+        </ul>
+      </div>
+      <div class="main" ref="wrapper">
+      <div class="content">
+      <city-domestic :cities="cities" :hotCities="hotCities"></city-domestic>
+      <alphabet-list :list="cities"></alphabet-list>
+      </div>
     </div>
-    <city-domestic :cities="cities" :hotCities="hotCities"></city-domestic>
-    <alphabet-list :list="cities"></alphabet-list>
   </div>
 </template>
 
 <script>
 import CityDomestic from './domestic'
 import AlphabetList from './Alphabet'
+import BetterScroll from 'better-scroll'
 export default {
   name: 'CityTab',
   components: {
@@ -41,8 +46,11 @@ export default {
       })
   },
   mounted: function () {
-    this.tab1 = this.$refs.tab1
-    this.tab2 = this.$refs.tab2
+    this.$nextTick(() => {
+      this.scroll = new BetterScroll(this.$refs.wrapper)
+      this.tab1 = this.$refs.tab1
+      this.tab2 = this.$refs.tab2
+    })
   },
   methods: {
     tab (add, del, className) {
@@ -86,4 +94,11 @@ export default {
         .active
           background:#fff
           color:#00bcd4
+  .main
+    position:absolute
+    top:1.68rem
+    left:0
+    right:0
+    bottom:0
+    overflow:hidden
 </style>

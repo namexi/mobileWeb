@@ -1,6 +1,7 @@
 <template lang="html">
   <div class="city-wrapper">
     <city-header :cityList="cityList" @change="cityDataChange"></city-header>
+    <city-search :cities="cities"></city-search>
     <city-tab :hotCities="hotCities" :cities="cities" :letter="letter"></city-tab>
     <letter-list :cities="cities" @change="letterChange"></letter-list>
   </div>
@@ -10,12 +11,14 @@
 import CityHeader from './components/header.vue'
 import CityTab from './components/tab.vue'
 import LetterList from './components/letterList.vue'
+import CitySearch from './components/search.vue'
 export default {
   name: 'City',
   components: {
     CityHeader,
     CityTab,
-    LetterList
+    LetterList,
+    CitySearch
   },
   methods: {
     cityDataChange (data) {

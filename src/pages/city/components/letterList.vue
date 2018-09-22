@@ -29,8 +29,9 @@ export default {
     letterListClick (e) {
       this.$emit('change', e.target.innerText)
     },
-    touchStart () {
+    touchStart (e) {
       this.flag = true
+      e.preventDefault()
     },
     touchMove (e) {
       if (this.flag) {

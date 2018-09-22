@@ -71,7 +71,7 @@ export default {
 <style lang="stylus" scoped>
   .tab
     position:absolute
-    top:1.68rem
+    top:1.9rem
     left:0
     right:0
     bottom:0

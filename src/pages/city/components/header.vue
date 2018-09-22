@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="city-header">
     <div class="city">
       <router-link :to="{ name: 'Home'}">
         <div class="city-left">
@@ -65,6 +65,7 @@ export default {
   line-height:$headHeight
   background-color:$headBgColor
   color:#fff
+  z-index:2
   .city-left
     width:.8rem
     float:left
@@ -83,7 +84,7 @@ export default {
         margin-right:1rem
 .header
     background:#00bcd4
-    padding:.18rem 1rem
+    padding:0 1rem
     .header-tab
       height:.4rem
       line-height:.4rem

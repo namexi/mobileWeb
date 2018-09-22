@@ -25,7 +25,11 @@
 import BetterScroll from 'better-scroll'
 export default {
   name: 'CityTab',
-  props: ['cities', 'hotCities', 'letter'],
+  props: {
+    cities: Object,
+    hotCities: Array,
+    letter: String
+  },
   data () {
     return {
       letterTarget: ''

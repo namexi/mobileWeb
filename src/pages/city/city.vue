@@ -28,9 +28,9 @@ export default {
   },
   data () {
     return {
-      cityList: '',
-      hotCities: '',
-      cities: '',
+      cityList: {},
+      hotCities: [],
+      cities: {},
       letter: ''
     }
   },
@@ -39,8 +39,8 @@ export default {
       .then(res => {
         res = res.data
         if (res.ret) this.cityList = res.data
-        if (!this.hotCities) this.hotCities = res.data.hotCities
-        if (!this.cities) this.cities = res.data.cities
+        if (!this.hotCities.length) this.hotCities = res.data.hotCities
+        if (!this.cities.length) this.cities = res.data.cities
       })
   }
 }

@@ -19,7 +19,9 @@
 <script>
 export default {
   name: 'CityHeader',
-  props: ['cityList'],
+  props: {
+    cityList: Object
+  },
   data () {
     return {
       tab1: '',

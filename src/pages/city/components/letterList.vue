@@ -6,10 +6,14 @@
 <script>
 export default {
   name: 'LetterList',
-  props: ['cities'],
+  props: {
+    cities: Object
+  },
   data () {
     return {
-      flag: false
+      flag: false,
+      startY: 0,
+      touched: null
     }
   },
   computed: {
@@ -30,17 +34,22 @@ export default {
     },
     touchMove (e) {
       if (this.flag) {
-        const startY = this.$refs.star.offsetTop
-        const touchY = e.touches[0].clientY
-        const idx = parseInt((touchY - startY) / 20)
-        if (idx >= 0 && idx < this.list.length) {
-          this.$emit('change', this.list[idx])
-        }
+        if (this.touched) clearTimeout(this.touched)
+        this.touched = setTimeout(() => {
+          const touchY = e.touches[0].clientY
+          const idx = parseInt((touchY - this.startY) / 20)
+          if (idx >= 0 && idx < this.list.length) {
+            this.$emit('change', this.list[idx])
+          }
+        }, 16)
       }
     },
     touchEnd () {
       this.flag = false
     }
+  },
+  updated () {
+    this.startY = this.$refs.star.offsetTop
   }
 }
 </script>

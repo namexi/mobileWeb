@@ -27,7 +27,9 @@ export default {
     }
   },
   mounted () {
-    this.scroll = new Bscroll(this.$refs.wrapper)
+    this.$nextTick(() => {
+      this.scroll = new Bscroll(this.$refs.wrapper)
+    })
   },
   watch: {
     input () {

@@ -30,39 +30,25 @@ export default {
     hotCities: Array,
     letter: String
   },
-  data () {
-    return {
-      letterTarget: ''
-    }
-  },
   methods: {
     letterClick (e) {
-      this.letterTarget = e.target.innerText
+      this.$emit('change', e.target.innerText)
     }
   },
   watch: {
-    letterTarget () {
-      if (this.letterTarget) {
-        const el = this.$refs[this.letterTarget][0]
-        this.scroll.scrollToElement(el)
-      }
-    },
     letter () {
       if (this.letter) {
         const el = this.$refs[this.letter][0]
         this.scroll.scrollToElement(el)
-      }
-    },
-    idx () {
-      if (this.idx) {
-        const el = this.$refs[this.idx][0]
-        this.scroll.scrollToElement(el)
+        this.$emit('change', '')
       }
     }
   },
   mounted: function () {
     this.$nextTick(() => {
-      this.scroll = new BetterScroll(this.$refs.wrapper)
+      this.scroll = new BetterScroll(this.$refs.wrapper, {
+        click: true
+      })
     })
   }
 }
@@ -71,7 +57,7 @@ export default {
 <style lang="stylus" scoped>
   .tab
     position:absolute
-    top:1.9rem
+    top:1.93rem
     left:0
     right:0
     bottom:0
@@ -91,7 +77,6 @@ export default {
     background:#f5f5f5
   .wrapper-city
     width:100%
-    height:100%
     position:relative
     overflow:hidden
     .wrapper
@@ -137,4 +122,7 @@ export default {
       text-overflow:ellipsis
       border-bottom:1px solid #ddd
       margin-bottom:-1px
+  .red{
+    background:red
+  }
 </style>

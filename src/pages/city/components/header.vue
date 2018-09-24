@@ -10,8 +10,8 @@
     </div>
     <div class="header">
       <ul class="header-tab">
-        <li class="active" @click="tabDomestic" ref="tab1">境内</li>
-        <li @click="tabOverseas" ref="tab2">境外·港澳台</li>
+        <li :class="{active:domesticFlag}" @click="tabDomestic">境内</li>
+        <li :class="{active:overseasFlag}" @click="tabOverseas">境外·港澳台</li>
       </ul>
     </div>
   </div>
@@ -27,32 +27,29 @@ export default {
       tab1: '',
       tab2: '',
       cities: {},
-      hotCities: []
+      hotCities: [],
+      domesticFlag: true,
+      overseasFlag: false
     }
   },
-  mounted: function () {
-    this.$nextTick(() => {
-      this.tab1 = this.$refs.tab1
-      this.tab2 = this.$refs.tab2
-    })
-  },
   methods: {
-    tab (add, del, className) {
-      if (add.classList.contains(className)) return
-      add.classList.add(className)
-      del.classList.remove(className)
-    },
     tabDomestic () {
-      this.tab(this.tab1, this.tab2, 'active')
       this.cities = this.cityList.cities
       this.hotCities = this.cityList.hotCities
       this.$emit('change', [this.cities, this.hotCities])
+      if (this.overseasFlag) {
+        this.overseasFlag = false
+      }
+      this.domesticFlag = true
     },
     tabOverseas () {
-      this.tab(this.tab2, this.tab1, 'active')
       this.cities = this.cityList.overseasCities
       this.hotCities = this.cityList.overseasHotCities
       this.$emit('change', [this.cities, this.hotCities])
+      if (this.domesticFlag) {
+        this.domesticFlag = false
+      }
+      this.overseasFlag = true
     }
   }
 }

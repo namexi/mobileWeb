@@ -2,7 +2,7 @@
   <div class="city-wrapper">
     <city-header :cityList="cityList" @change="cityDataChange"></city-header>
     <city-search :cities="cities"></city-search>
-    <city-tab :hotCities="hotCities" :cities="cities" :letter="letter"></city-tab>
+    <city-tab :hotCities="hotCities" :cities="cities" :letter="letter" @change="letterChange"></city-tab>
     <letter-list :cities="cities" @change="letterChange"></letter-list>
   </div>
 </template>
@@ -27,6 +27,7 @@ export default {
     },
     letterChange (letter) {
       this.letter = letter
+      console.log(letter)
     }
   },
   data () {

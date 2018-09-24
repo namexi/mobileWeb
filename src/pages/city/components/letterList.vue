@@ -31,7 +31,6 @@ export default {
     },
     touchStart (e) {
       this.flag = true
-      e.preventDefault()
     },
     touchMove (e) {
       if (this.flag) {
@@ -56,15 +55,16 @@ export default {
 </script>
 <style lang="stylus" scoped>
   .letter-list
-    width:.4rem
+    width:.5rem
     font-size:.28rem
     position:absolute
-    top:2.78rem
+    top:2.38rem
     right:0
-    bottom:2.78rem
+    bottom:2.38rem
     color:#25a4bb
     font-weight:550
     text-align:center
+    margin-right:.05rem
     li
       padding-top:.12rem
 </style>
